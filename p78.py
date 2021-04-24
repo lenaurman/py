@@ -18,7 +18,7 @@ def spirala(t):
     t.setx(random.randrange(-200,200))
     t.sety(random.randrange(-200,200))
     t.pencolor(random.randrange(0,255),random.randrange(0,255),200)
-    t.width(random.randrange(2,9))
+    t.width(random.randrange(2,13))
     t.pendown()
 
     for i in range(120):
