@@ -41,6 +41,7 @@ t1.shape('circle')
 for z in range(3):
     spirala(t1)
 
+# https://pythonprogramminglanguage.com/user-input-python/
 name = input("Enter a name: ")
 print(name)    
 
