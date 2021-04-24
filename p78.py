@@ -3,6 +3,7 @@
 import turtle
 import random
 
+# color mode & screen color
 turtle.colormode(255)
 turtle.bgcolor(0,0,0)   # background color - black
 
@@ -25,13 +26,17 @@ def spirala(t):
     	t.left(30 - i/1.5)
 # -- end of spirala(t)
 
-###   Main      ###
+
+#####################
+  ###   Main      ###
+#####################
+
 # init turtle
 t1 = turtle.Turtle()
 t1.speed(0)
 t1.shape('circle')
 
-#Drawing 3 spirals from random position
+#Drawing 3 spirals with random position, color and width
 for z in range(3):
     spirala(t1)
 
