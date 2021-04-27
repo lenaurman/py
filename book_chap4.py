@@ -81,13 +81,15 @@ t0 = turtle.Turtle()
 t1 = turtle.Turtle()  
 t2 = turtle.Turtle() 
 t3 = turtle.Turtle() 
+t4 = turtle.Turtle() 
+
 
 ## polyline
 t0.penup()
 t0.setposition(t0.position() + [-300, -200])
 t0.pendown()
 polyline(t0, 7, 70, 33)
-t0.write('polyline, side = 70, angle = 33')
+t0.write('polyline, side = 70, angle = 33',align='left',font=('Veranda',15))
 ## 
 
 ## square
@@ -95,23 +97,32 @@ t1.penup()
 t1.setposition(t1.position() + [-300, -70])
 t1.pendown()
 square(t1, 70)
-t1.write('square, side = 70')
+t1.write('square, side = 70', font=('Veranda',15))
 ## 
 
 ## polygon 
 polygon(t2, 6, 120)
-t2.write('polygon (6 sided), side = 70')
+t2.write('polygon (6 sided), side = 70', font=('Veranda',15))
 ##
 
 ## polygon 
 t3.penup()
 t3.setposition(t3.position() + [+300,-3])
 t3.pendown()
-t3.write('polygon (8 sided), side = 70')
 polygon(t3, 8, 70)
+t3.write('polygon (8 sided), side = 70', font=('Veranda',15))
 ##
 
-#arc(t1, 40, 180)
+t3.screen.textinput('Press Enter to continue...','nu press')
+
+## arc 
+t4.penup()
+t4.setposition(t4.position() + [-100,+200])
+t4.pendown()
+arc(t4, 40, 180)
+t4.write('Arc radius = 70 angle=180', font=('Veranda',15))
+##
+
 #arc2(t2, 40, 180)
 #t3.pencolor('black')
 #t3.circle(40)
