@@ -47,7 +47,8 @@ class Spirartle(Turtle):
         self.goto(position) # positioning
 
     def onclick(self):
-        self.color = (200,0,0)   
+        self.color = (200,0,0)
+        self.setposition = self.position - 70   
 
 #####################################
 ######################## Main 
