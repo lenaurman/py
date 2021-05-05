@@ -43,6 +43,9 @@ turtle.speed(0) # turtle speed to slowest
 
 # draw a spiral
 spiralaa()
+spiralaa()
+spiralaa()
+spiralaa()
 
 # allow user to click           # for some action
 turtle.onscreenclick(spiralaaa)

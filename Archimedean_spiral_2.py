@@ -57,7 +57,7 @@ def spiral(t):
     Check out more about https://en.wikipedia.org/wiki/Archimedean_spiral
     """
     for i in range(36):
-        arc(t, 7*i, 90)
+        arc(t, 7*i, 90)    
 
 
 #############
@@ -74,30 +74,25 @@ screen.colormode(255)
 screen.bgcolor(0,0,0)
 screen.title ('spirals and other animals')
 
-
-#turtle.stamp()
-turtle.shape('circle')
-t0 = turtle.Turtle()  
 t1 = turtle.Turtle()  
 t1.shape('circle')
-t2 = turtle.Turtle() 
-t3 = turtle.Turtle() 
-t4 = turtle.Turtle() 
 
-screen.onscreenclick(t0.goto(120,90))
-
-t1.color('blue','black')
+t1.color('pink','blue')
 t1.begin_fill()
 
 spiral(t1)
 
-#t3.screen.textinput('Press Enter to continue...','nu press')
-#screen._onclick(square(t0,20))
+t1.penup()
+t1.sety(-130.0)
+t1.pendown()
 
-
-#t1.color(100,0,0)
-t1.sety(-130)
 spiral(t1)
-t1.end_fill()
 
+t1.penup()
+t1.sety(0.0)
+t1.setx(-70)
+t1.pendown()
+spiral(t1)
+
+t1.end_fill()
 turtle.done()
