@@ -13,22 +13,28 @@ class Spirartle(Turtle):
         """        
         Turtle.__init__(self,shape='circle')
         self.penup()
-        """ set Color """
-        rrr = random.randrange(0,77)
-        ggg = random.randrange(0,77)
-        bbb = random.randrange(110,255)
-        color = (rrr, ggg, bbb)
-        self.color(color) # set color        
+        #setRandomColor(self)
         """ set Width """        
         self.width(random.randrange(1,12))
         """ set heading """        
         self.setheading(random.randrange(1,360))
 
+        #self.setRandomPosition()
+        
+        self.pendown()    
+
+    def setRandomColor():
+        """ set Color """
+        rrr = random.randrange(0,77)
+        ggg = random.randrange(0,77)
+        bbb = random.randrange(110,255)
+        self.color = (rrr, ggg, bbb)
+
+    def setRandomPosition():
         """ be ready at your position"""
         xx = random.randrange(-1 * int(screen.canvwidth/2), int(screen.canvwidth)/2)
         yy = random.randrange(-1 * int(screen.canvheight/2), int(screen.canvheight)/2)
         self.goto(xx,yy) # positioning
-        self.pendown()    
 
     def drawMe(self):
         """
