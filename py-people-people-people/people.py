@@ -24,16 +24,24 @@ p3 = {
 #
 ## add p4 please
 #
-# DataFrame from list pf dicts
-ppd = pd.DataFrame([p1, p2, p3])
 
-print()
-print('---------- People you must know dataset ----------------')
-print()
+p4 = {
+    'name' : 'Salvador Dali',
+    'titles' : ['artist'],
+    'creations' : ['A Couple with Their Heads Full of Clouds', 'Apparition of Face and Fruit Dish on a Beach', 
+                   'The Disintegration of the Persistence of Memory'],
+    'creations_year' : [1936, 1938, 1954] #need a check
+}
+
+# DataFrame from list pf dicts
+ppd = pd.DataFrame([p1, p2, p3, p4])
+
+print('\n ---------- People you must know dataset ---------------- \n')
+
 print(ppd)
 ppd.to_csv('people_you_must_know.csv')
-print('Saved to csv.. i hope..')
-print()
+print('Saved to csv.. i hope.. \n')
 
-print("Add p4 please")
-print()
+print("p4 added \n")
+
+display(ppd)
