@@ -38,10 +38,6 @@ def createPPD():
         'place' : ['Toronto, Canada'] #need a check
     }
 
-    #
-    ## add p4 please
-    #
-
     p4 = {
         'name' : 'Salvador Dali',
         'titles' : ['artist'],
@@ -66,18 +62,6 @@ def createPPD():
     print('\n ---------- People you must know dataset ---------------- \n')
     
     return ppd
-
-
-# print(ppd,'\n')
-# ppd.to_csv('people_you_must_know.csv')
-# print('Saved to csv.. i hope.. \n')
-
-# print("p4 added \n")
-
-# display(ppd)
-
-
-# In[10]:
 
 
 # Define a user_agent ---> ny_explorer
